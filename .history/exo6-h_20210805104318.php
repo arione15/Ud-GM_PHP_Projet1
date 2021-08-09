@@ -35,6 +35,7 @@ class Arme
     public function getNomImage(){
         $carcaterSpeciaux = ["à", "é", "é", "ç", "ù"];
         $remplacant = ["a", "e", "e", "c", "u"];
+
         $nomSansAccent = str_replace($carcaterSpeciaux, $remplacant, $this->nom);
         return $nomSansAccent . "/" . $nomSansAccent . $this->level . ".png"; 
     }
